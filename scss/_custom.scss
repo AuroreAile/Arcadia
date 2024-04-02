@@ -6,11 +6,13 @@ $primary: #EDE5DA;
 $secondary: #F5A500;
 $success: #5D8725;
 $dark: #363839;
-$font-family-sans-serif: "Source sans Code", sans-serif !default;
-$font-family-serif: "Source sans Code", sans-serif !default;
+
+$font-family-sans-serif: "poppins", sans-serif !default;
+$font-family-serif: "poppins", serif !default;
+
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
 
 // Then add additional custom code here
