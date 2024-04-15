@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="style.css">
     <title>Arcadia Zoo</title>
-
 </head>
+
 <body>
-  <!--SART Header du site-->  
+  <!--START Header du site-->  
   <header class="text-white">
     <!--START téléphone et adresse-->
     <div class="px-3 py-2 bg-secondary">
@@ -30,7 +30,7 @@
     <!--END téléphone et adresse-->    
     <!--START logo-->
     <div class="px-3 py-2 bg-success d-flex align-items-center justify-content-center" >
-      <a href="/"><img src="images/Logo1.png" alt="logo" class="img-fluid"></a>
+      <a href="/"><img src="images/Logo1.png" alt="logo" class="img-fluid w-75"></a>
     </div>
     <!--END logo-->
     <!--START barre navigation-->
@@ -42,10 +42,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent" >
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item px-4">
-                <a class="nav-link" href="/">Accueil</a>
+                <a class="nav-link text-white" href="/">Accueil</a>
               </li>
               <li class="nav-item dropdown px-4">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Habitats
                 </a>
                 <ul class="dropdown-menu">
@@ -56,13 +56,13 @@
                 </ul>
               </li>
               <li class="nav-item px-4">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link text-white" href="#">Services</a>
               </li>
               <li class="nav-item px-4">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link text-white" href="#">Contact</a>
               </li>
               <li class="nav-item px-4">
-                <a class="nav-link">Espace réservé</a>
+                <a class="nav-link text-white">Espace réservé</a>
               </li>
             </ul>
           </div>
@@ -70,57 +70,77 @@
       </nav>
     <!--END barre navigation-->
   </header>
+  <!--END header-->
 
-
-      <main id="main-page">
-          Bienvenue sur le site d'Arcadia
-          <button class="btn btn-secondary">Cliquez ici</button>
-      </main>
+  <main>
+    <div>
+      <h1>Bienvenue sur le site d'Arcadia</h1>
+      <h1>Bienvenue sur le site d'Arcadia</h1>
+          <h1>Bienvenue sur le site d'Arcadia</h1>
+          <h1>Bienvenue sur le site d'Arcadia</h1>
+          <h1>Bienvenue sur le site d'Arcadia</h1>
+          <h1>Bienvenue sur le site d'Arcadia</h1>
+          <h1>Bienvenue sur le site d'Arcadia</h1>
+          <h1>Bienvenue sur le site d'Arcadia</h1>
+          <h1>Bienvenue sur le site d'Arcadia</h1>
+    </div>
+  </main>
 
   <!--START footer du site-->  
   <footer class="footer bg-dark text-white align-items-center">
-    <!--START avis-->
-    <div class="px-3 py-2 d-flex align-items-center justify-content-between" >
-      <div class="text-white">Conquis par votre visite ?</div>
-      <button type="button" class="btn btn-success text-white">Laissez-nous un message</button>
+    <div class= "row text-center gx-5">
+      <!--START avis-->
+      <div class="p-3 col-6">
+        <p class="text-white">Conquis par votre visite ?</p>
+      </div>
+      <div class="p-3 col-6">  
+        <button type="button" class="btn btn-success text-white">Laissez-nous un message</button>
+      </div>
+      <!--END avis-->
     </div>
-    <!--END avis-->
-    <!--START Image + texte-->
-      <div class= "row text-center gx-5">
-        <div class="col-3"></div>
-        <div class="col-6">
-          <img src="images/ourson-footer.jpg" class="img-fluid">
-        </div>
-        <div class="col-3"></div>
-        <div class="p-3 col-6">
-          <h3 class="text-success">Venez nous rejoindre</h3>
-          <p>Chemin de Kamelott<br/>
-              35380 Paimpont<br/>
-              <i class="bi bi-telephone-fill">+ 33 (0)2 98 12 34 56</i><br/>
-              <i class="bi bi-envelope">contact@arcadia.fr</i>
-          </p>
-        </div>
-        <div class="p-3 col-6">
-          <h3 class="text-success">Liens du site</h3>
+
+    <div class= "row text-center gx-5 align-items-center">
+      <!--START Image + texte-->
+      <div class="col-12 col-lg-4 order-lg-2">
+        <img src="images/ourson-footer.jpg" class="w-50 rounded">
+      </div>
+      <div class="p-3 col-6 col-lg-4 order-lg-1">
+        <h4 class="text-success">Venez nous rejoindre</h4>
+        <p>Chemin de Kamelott<br/>
+           35380 Paimpont<br/>
+           <i class="bi bi-telephone-fill"> + 33 (0)2 98 12 34 56</i><br/>
+           <i class="bi bi-envelope"> contact@arcadia.fr</i>
+        </p>
+      </div>
+      <div class="p-3 col-6 col-lg-4 order-lg-3">
+          <h4 class="text-success">Liens du site</h4>
           <ul class="text-decoration-none list-unstyled">
             <li><a href="/" class="text-decoration-none">Accueil</a></li>
             <li><a href="/" class="text-decoration-none">Habitats</a></li>
             <li><a href="/" class="text-decoration-none">Services</a></li>
           </ul>  
+      </div>
+      <!--END image + texte-->
+    </div>
+
+    <div class= "row text-center gx-5">
+      <!--START Réseaux sociaux + copyright-->
+      <div class="px-3 py-2 d-flex align-items-center justify-content-between">
+        <div>
+          <i class="bi bi-facebook bg-body-secondary text-success px-1"></i>
+          <i class="bi bi-youtube bg-body-secondary text-success px-1  mx-3"></i>
+          <i class="bi bi-instagram bg-body-secondary text-success px-1"></i>
         </div>
+        <div class="text-success">Copyright 2024 © ARCADIA - Tous droits réservés  </div>
       </div>
-    <div class="px-3 py-2 d-flex align-items-center justify-content-between">
-      <div>
-        <i class="bi bi-facebook bg-body-secondary text-success px-1"></i>
-        <i class="bi bi-youtube bg-body-secondary text-success px-1  mx-3"></i>
-        <i class="bi bi-instagram bg-body-secondary text-success px-1"></i>
-      </div>
-      <div class="text-success">Copyright 2024 © ARCADIA - Tous droits réservés  </div>
+      <!--END Réseaux sociaux + copyright-->
+    </div>  
+    
+    
     </div>
     
-
-    
   </footer>
+  <!--END Footer-->
       <script type="module" src="Router/Router.js"></script>
 
   </body>

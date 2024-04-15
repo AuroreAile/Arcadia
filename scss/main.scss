@@ -5,10 +5,13 @@ html{
     position: relative;
     min-height: 100%;
 }
+main {
+    margin-bottom: 360px;
+}
 
 footer.footer{
     padding: 15px;
     position : absolute;
-    bottom: 1;
+    bottom: 0;
     width: 100%;
 }
