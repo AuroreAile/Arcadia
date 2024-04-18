@@ -1,12 +1,20 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
+/*Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html{
     position: relative;
     min-height: 100%;
 }
+
 main {
-    margin-bottom: 360px;
+    margin-bottom: 395px;
 }
 
 footer.footer{
@@ -15,3 +23,71 @@ footer.footer{
     bottom: 0;
     width: 100%;
 }
+
+.header-scene {
+  background-image: url(../images/bg_header.jpg);
+  background-size: cover;
+
+  .header-scene-content {
+    height: 100px;
+  }
+
+  .logo{
+    height: 95%;
+    width: auto;
+  }
+}
+
+.hero-scene {
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/fondHeroScene.jpg);
+    background-size: cover;
+  }
+
+  * {
+    //Positionner les éléments devant le ::before
+    position: relative;
+  }
+
+  .hero-scene-content {
+    height: 600px;
+    width: auto;
+    height: 650px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h2 {
+      margin-bottom: 50px;
+      font-size: 50px;
+    }
+
+    h1 {
+      font-family: $font-family-serif;
+      font-size: 130px;
+    }
+  }
+}
+
+
+
+
+/*Portable*/
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 0.7em;
+  }
+  header {
+    font-size: 0.8em;
+  }
+  
+}  
