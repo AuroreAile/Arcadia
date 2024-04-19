@@ -29,7 +29,7 @@ footer.footer{
   background-size: cover;
 
   .header-scene-content {
-    height: 100px;
+    height: auto;
   }
 
   .logo{
@@ -57,23 +57,26 @@ footer.footer{
   }
 
   .hero-scene-content {
-    height: 600px;
-    width: auto;
-    height: 650px;
-    width: auto;
+    max-height: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
     h2 {
-      margin-bottom: 50px;
-      font-size: 50px;
+      margin-bottom: 1.5rem;
+      font-size: 3.5rem;
     }
+
+    h2.bienvenue {
+        margin-top: 2rem;
+      }
 
     h1 {
       font-family: $font-family-serif;
-      font-size: 130px;
+      font-size: 9rem;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -90,4 +93,4 @@ footer.footer{
     font-size: 0.8em;
   }
   
-}  
+}

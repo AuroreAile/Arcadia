@@ -11994,7 +11994,7 @@ footer.footer {
   background-size: cover;
 }
 .header-scene .header-scene-content {
-  height: 100px;
+  height: auto;
 }
 .header-scene .logo {
   height: 95%;
@@ -12018,22 +12018,24 @@ footer.footer {
   position: relative;
 }
 .hero-scene .hero-scene-content {
-  height: 600px;
-  width: auto;
-  height: 650px;
-  width: auto;
+  max-height: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .hero-scene .hero-scene-content h2, .hero-scene .hero-scene-content .h2 {
-  margin-bottom: 50px;
-  font-size: 50px;
+  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+}
+.hero-scene .hero-scene-content h2.bienvenue, .hero-scene .hero-scene-content .bienvenue.h2 {
+  margin-top: 2rem;
 }
 .hero-scene .hero-scene-content h1, .hero-scene .hero-scene-content .h1 {
   font-family: "oregano", serif;
-  font-size: 130px;
+  font-size: 9rem;
+  margin-bottom: 2rem;
 }
 
 /*Portable*/
