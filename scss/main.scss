@@ -15,6 +15,7 @@ html{
 
 main {
     margin-bottom: 395px;
+    font-size: 1.5rem;
 }
 
 footer.footer{
@@ -25,7 +26,7 @@ footer.footer{
 }
 
 .header-scene {
-  background-image: url(../images/bg_header.jpg);
+  background-image: url(/images/Images_Accueil/bg_header.jpg);
   background-size: cover;
 
   .header-scene-content {
@@ -47,7 +48,7 @@ footer.footer{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/fondHeroScene.jpg);
+    background-image: url(/images/Images_Accueil/fondHeroScene.jpg);
     background-size: cover;
   }
 
@@ -65,32 +66,93 @@ footer.footer{
     justify-content: center;
     
     h2 {
-      margin-bottom: 1.5rem;
+      margin-bottom: 3rem;
       font-size: 3.5rem;
     }
 
     h2.bienvenue {
-        margin-top: 2rem;
+        margin-top: 12rem;
       }
 
     h1 {
       font-family: $font-family-serif;
       font-size: 9rem;
-      margin-bottom: 2rem;
+      margin-bottom: 10rem;
     }
   }
 }
+
+.habitat_scene {
+  position: relative;
+
+    .image_habitat {
+      object-fit: cover;
+    }
+
+    .image_habitat_text {
+      position: absolute;
+      top: 80%;
+      left: 10%;
+      z-index: 1;
+      font-size: 1.5rem;
+    }
+  }
+
+
 
 
 
 
 /*Portable*/
 @media screen and (max-width: 600px) {
+
   html {
     font-size: 0.7em;
   }
   header {
     font-size: 0.8em;
   }
-  
+  .hero-scene {
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/Images_Accueil/fondHeroScene.jpg);
+    background-size: cover;
+  }
+
+  * {
+    //Positionner les éléments devant le ::before
+    position: relative;
+  }
+
+  .hero-scene-content {
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+
+    h2.bienvenue {
+        margin-top: 3.5rem;
+      }
+
+    h1 {
+      font-family: $font-family-serif;
+      font-size: 7rem;
+      margin-bottom: 2rem;
+    }
+  }
+  }
+
 }
