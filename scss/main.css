@@ -12054,6 +12054,29 @@ footer.footer {
   font-size: 1.5rem;
 }
 
+/*Carousel */
+#carousel {
+  background-color: white;
+  margin: 20px auto 0;
+  padding: 25px;
+  border-radius: 50px;
+  border: #5D8725 5px solid;
+  width: 40rem;
+  height: 25rem;
+}
+
+.quote {
+  display: block;
+  text-align: left;
+  color: #5D8725;
+  opacity: 0.6;
+}
+
+.quote_right {
+  text-align: left;
+  transform: rotate(3.142rad);
+}
+
 /*Portable*/
 @media screen and (max-width: 600px) {
   html {
