@@ -102,6 +102,7 @@ footer.footer{
 
 #carousel {
   background-color: white;
+  min-width: 100px;
   margin: 20px auto 0;
   padding: 25px;
   border-radius: 50px;
@@ -120,6 +121,11 @@ footer.footer{
 .quote_right {
   text-align: left;
   transform: rotate(3.142rad);
+}
+
+.carousel-control-prev {
+  color : #5d8725;
+  align-items: start; 
 }
 
 

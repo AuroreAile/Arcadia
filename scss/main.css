@@ -12077,6 +12077,11 @@ footer.footer {
   transform: rotate(3.142rad);
 }
 
+.carousel-control-prev {
+  color: #5d8725;
+  align-items: start;
+}
+
 /*Portable*/
 @media screen and (max-width: 600px) {
   html {
