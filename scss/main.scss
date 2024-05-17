@@ -25,6 +25,7 @@ footer.footer{
     width: 100%;
 }
 
+/*header*/
 .header-scene {
   background-image: url(/images/Images_Accueil/bg_header.jpg);
   background-size: cover;
@@ -39,6 +40,7 @@ footer.footer{
   }
 }
 
+/*body*/
 .hero-scene {
   position: relative;
   &::before{
@@ -96,13 +98,19 @@ footer.footer{
       z-index: 1;
       font-size: 1.5rem;
     }
+
+    .habitat_text {
+      position: absolute;
+      top:45%;
+      left:30%;
+      z-index: 1;
+      font-size: 3rem;
+    }
   }
 
 /*Carousel */
-
 #carousel {
   background-color: white;
-  min-width: 100px;
   margin: 20px auto 0;
   padding: 25px;
   border-radius: 50px;
@@ -135,7 +143,7 @@ footer.footer{
 @media screen and (max-width: 600px) {
 
   html {
-    font-size: 0.7em;
+    font-size: 0.8rem;
   }
 
   header {
@@ -185,5 +193,29 @@ footer.footer{
   }
   }
 
- 
+  #carousel {
+  background-color: white;
+  margin: 0 auto 20px;
+  padding: 25px;
+  border-radius: 50px;
+  border: #5D8725 5px solid;
+  width: 30rem;
+  height: 25rem;
+}
+
+.habitat_scene .habitat_text {
+  position: absolute;
+  top: 35%;
+  left: 1%;
+  z-index: 1;
+  font-size: 3rem;
+}
+
+.habitat{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+  height :150px;
+  overflow: auto;
+}
 }
