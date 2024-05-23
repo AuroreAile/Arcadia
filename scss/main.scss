@@ -14,16 +14,23 @@ html{
 }
 
 main {
-    margin-bottom: 395px;
+    margin-bottom: 150px;
     font-size: 1.5rem;
 }
 
-footer.footer{
+footer {
+  .footer{
     padding: 15px;
     position : absolute;
     bottom: 0;
     width: 100%;
+  }
+
+  .image-footer{
+      width: 25em;
+  }
 }
+
 
 /*header*/
 .header-scene {
@@ -41,6 +48,10 @@ footer.footer{
 }
 
 /*body*/
+
+/*accueil*/
+
+/*image centrale*/
 .hero-scene {
   position: relative;
   &::before{
@@ -52,6 +63,7 @@ footer.footer{
     height: 100%;
     background-image: url(/images/Images_Accueil/fondHeroScene.jpg);
     background-size: cover;
+    border-bottom : white solid 5px;
   }
 
   * {
@@ -84,6 +96,14 @@ footer.footer{
   }
 }
 
+/*article 1*/
+.image-accueil {
+  width: 610px;
+  height: 410px;
+  object-fit: cover;
+}
+
+/*article 2*/
 .habitat_scene {
   position: relative;
 
@@ -136,20 +156,39 @@ footer.footer{
   align-items: start; 
 }
 
-
+/*page habitat*/
+.image-animaux {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
 
 
 /*Portable*/
 @media screen and (max-width: 600px) {
 
-  html {
-    font-size: 0.8rem;
-  }
+  main {
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+}
 
   header {
     font-size: 0.8em;
   }
 
+  footer {
+    .footer{
+        font-size: 0.5em;
+      }
+    
+    .image-footer{
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+    }
+}
+
+/*accueil*/
   .hero-scene {
   position: relative;
   &::before{
@@ -159,8 +198,9 @@ footer.footer{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/images/Images_Accueil/fondHeroScene.jpg);
-    background-size: cover;
+    background-image: url(/images/Images_Accueil/fondHeroScene.png);
+    background-size: 100%;
+    border-bottom: white solid 5px;
   }
 
   * {
@@ -193,16 +233,14 @@ footer.footer{
   }
   }
 
-  #carousel {
-  background-color: white;
-  margin: 0 auto 20px;
-  padding: 25px;
-  border-radius: 50px;
-  border: #5D8725 5px solid;
-  width: 30rem;
-  height: 25rem;
+/*article 1*/
+.image-accueil {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
 }
 
+/*article2*/
 .habitat_scene .habitat_text {
   position: absolute;
   top: 35%;
@@ -218,4 +256,18 @@ footer.footer{
   height :150px;
   overflow: auto;
 }
+
+/*Carousel*/
+ #carousel {
+  width: 25rem;
+  height: 20rem;
+}
+
+/*page habitat*/
+.image-animaux {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
 }

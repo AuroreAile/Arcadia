@@ -11979,15 +11979,18 @@ html {
 }
 
 main {
-  margin-bottom: 395px;
+  margin-bottom: 150px;
   font-size: 1.5rem;
 }
 
-footer.footer {
+footer .footer {
   padding: 15px;
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+footer .image-footer {
+  width: 25em;
 }
 
 /*header*/
@@ -12004,6 +12007,8 @@ footer.footer {
 }
 
 /*body*/
+/*accueil*/
+/*image centrale*/
 .hero-scene {
   position: relative;
 }
@@ -12016,6 +12021,7 @@ footer.footer {
   height: 100%;
   background-image: url(/images/Images_Accueil/fondHeroScene.jpg);
   background-size: cover;
+  border-bottom: white solid 5px;
 }
 .hero-scene * {
   position: relative;
@@ -12041,6 +12047,15 @@ footer.footer {
   margin-bottom: 10rem;
 }
 
+/*article 1*/
+.image-accueil {
+  width: 610px;
+  height: 410px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*article 2*/
 .habitat_scene {
   position: relative;
 }
@@ -12091,14 +12106,33 @@ footer.footer {
   align-items: start;
 }
 
+/*page habitat*/
+.image-animaux {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*Portable*/
 @media screen and (max-width: 600px) {
-  html {
-    font-size: 0.8rem;
+  main {
+    margin-bottom: 50px;
+    font-size: 1.3rem;
   }
   header {
     font-size: 0.8em;
   }
+  footer .footer {
+    font-size: 0.5em;
+  }
+  footer .image-footer {
+    width: 200px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /*accueil*/
   .hero-scene {
     position: relative;
   }
@@ -12109,8 +12143,9 @@ footer.footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/images/Images_Accueil/fondHeroScene.jpg);
-    background-size: cover;
+    background-image: url(/images/Images_Accueil/fondHeroScene.png);
+    background-size: 100%;
+    border-bottom: white solid 5px;
   }
   .hero-scene * {
     position: relative;
@@ -12135,15 +12170,14 @@ footer.footer {
     font-size: 7rem;
     margin-bottom: 2rem;
   }
-  #carousel {
-    background-color: white;
-    margin: 0 auto 20px;
-    padding: 25px;
-    border-radius: 50px;
-    border: #5D8725 5px solid;
-    width: 30rem;
-    height: 25rem;
+  /*article 1*/
+  .image-accueil {
+    width: 180px;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
+  /*article2*/
   .habitat_scene .habitat_text {
     position: absolute;
     top: 35%;
@@ -12157,5 +12191,17 @@ footer.footer {
     width: auto;
     height: 150px;
     overflow: auto;
+  }
+  /*Carousel*/
+  #carousel {
+    width: 25rem;
+    height: 20rem;
+  }
+  /*page habitat*/
+  .image-animaux {
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=main.css.map */
